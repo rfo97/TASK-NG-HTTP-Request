@@ -1,0 +1,16 @@
+<div
+  class="w-[300px] h-[400px] border border-black rounded-md flex flex-col justify-between items-center p-4"
+>
+  <h1 class="text-md font-bold">{{ pet.name }}</h1>
+  <img
+    [src]="pet.image"
+    [alt]="pet.name + '-image'"
+    class="w-[200px] rounded-md"
+  />
+  <a
+    [routerLink]="['/pets', pet.id]"
+    class="border border-black px-5 py-1 rounded-md hover:bg-black hover:text-white"
+  >
+    View
+  </a>
+</div>

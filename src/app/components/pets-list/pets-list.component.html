@@ -1,0 +1,7 @@
+<div
+  class="flex flex-col flex-wrap md:flex-row gap-[20px] w-[76vw] justify-center items-center mb-[50px]"
+>
+  @for (pet of pets; track pet.id) {
+  <app-pet-card [pet]="pet"></app-pet-card>
+  }
+</div>
